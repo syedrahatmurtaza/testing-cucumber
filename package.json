@@ -1,0 +1,25 @@
+{
+  "name": "simple",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app//src/index.js",
+  "scripts": {
+    "start": "node app/src/index.js",
+    "report": "node report.js",
+    "test": "cucumber-js -f json:cucumber.json test/src/features/ -r test/src/steps/ --parallel 3 && npm run report"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.4",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "^7.3.1",
+    "cucumber-html-reporter": "^5.5.0",
+    "pactum": "^3.0.19"
+  }
+}
