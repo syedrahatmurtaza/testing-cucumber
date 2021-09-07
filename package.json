@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node app/src/index.js",
     "report": "node report.js",
-    "test": "cucumber-js -f json:cucumber.json test/src/features/ -r test/src/steps/ --parallel 3 && npm run report"
+    "test": "cucumber-js -f json:public/cucumber.json test/src/features/ -r test/src/steps/ --parallel 3 && npm run report"
   },
   "keywords": [],
   "author": "",
