@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node app/src/index.js",
     "report": "node report.js",
-    "test": "cucumber-js -f json:public/cucumber.json test/src/features/ -r test/src/steps/ --parallel 3 && npm run report"
+    "test": "grunt acceptance"
   },
   "keywords": [],
   "author": "",
@@ -20,6 +20,10 @@
   "devDependencies": {
     "@cucumber/cucumber": "^7.3.1",
     "cucumber-html-reporter": "^5.5.0",
+    "grunt": "^1.4.1",
+    "grunt-express-server": "^0.5.4",
+    "grunt-freeport": "^0.1.1",
+    "grunt-shell": "^3.0.1",
     "pactum": "^3.0.19"
   }
 }
